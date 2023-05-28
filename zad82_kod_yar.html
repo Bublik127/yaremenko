@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+    <title>Zad 82 kod</title>
+ </head>
+<body>
+    <hr>
+<h3>Plik:zad82_yar.html</h3>
+<plaintext>
+    <html>
+        <head>
+        <title> Zadanie 82-Yaremenko </title>
+        <script language="JavaScript">
+        function pushbutton() {
+        alert("Czesc !");}
+        </script>
+        <style>
+        h1{
+        color:red;
+        }
+        h3{
+        color:green;
+        }
+        </style>
+        </head>
+        <body>
+        <h1>Yaremenko</h1>
+        <h3>
+        <script>
+        dzis = new Date();
+        document.write(new Date(),"=new Date()--><br>")
+        document.write(dzis.getHours(),"=dzis.getHours()-->zwraca aktualna godzine (z przedzialu 0 - 23)<br>")
+        document.write(dzis.getMinutes(),"=dzis.getMinutes()-->zwraca minuty (z przedzialu 0 - 59)<br>")
+        document.write(dzis.getMonth()+1,"=dzis.getMonth()+1-->zwraca aktualny miesiac<br>")
+        document.write(dzis.getDate(),"=dzis.getDate()-->dzien miesiaca (wartosc z przedzialu 1 - 31)<br>")
+        document.write(dzis.getFullYear(),"-->=dzis.getFullYear()pelna liczba reprezentujaca rok")
+        </script>
+        </h3>
+        Ostatnio zmodyfikowany
+        <script language="LiveScript">
+        document.write(document.lastModified,"<br>")
+        </script>
+        <form>
+        <input type="button" name="Button1" value="Nacisnij mnie" onclick="pushbutton()">
+        </form>
+        <script language="JavaScript">
+        dzis = new Date();
+        
+        document.write("<br>Aktualny czas : ",dzis.getHours(),":",dzis.getMinutes());
+        document.write("<br>Aktualna data : <font style=\"font-size: 1.cm; color: red;\">",dzis.getMonth()+1,"</font>,<font style=\"font-size: 1.cm; color: green;\">",dzis.getDate(),"</font>,<font style=\"font-size: 1.cm; color: blue;\">",dzis.getFullYear(),"</font>");
+        </script>
+        </body>
+        </html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+    <title>Zad 84 kod</title>
+ </head>
+<body>
+    <hr>
+<h3>Plik:zad84_yar.html</h3>
+<plaintext>
+    <html> 
+        <head> 
+        <title> Zadanie 84-Yaremenko </title>
+         <script language="JavaScript">
+         function yaremenko_start() 
+         {
+         start_yar = new Date();
+         poczatek_yar=start_yar.getTime()
+         }
+         function yaremenko_stop()
+         {
+         stop_yar = new Date();
+         koniec_yar=stop_yar.getTime()
+         
+         roznica_yar=koniec_yar-poczatek_yar;
+         pokaz1.innerHTML=roznica_yar/1000+" s";
+         } 
+         </script>
+         <style>
+        
+         </style>
+         </head>
+        <body>
+            <script language="JavaScript">
+                dzis_yar = new Date();
+                 document.write("Aktualny czas : ",dzis_yar.getHours(),":",dzis_yar.getMinutes());
+                
+                </script>
+        <form>
+        <input type="button" name="Button1" value="START stoper" onclick="yaremenko_start()">
+        <input type="button" name="Button1" value="STOP stoper" onclick="yaremenko_stop()">
+        <br>
+        <table border="4px">
+            <br>
+         <tr id="pokaz1"></tr>
+        </table>
+        </form>
+        </body> 
+        </html>
